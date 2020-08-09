@@ -1,0 +1,563 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f7f8fa;
+  color: var(--onyx);
+}
+
+a {
+  color: var(--onyx);
+  text-decoration: none;
+}
+
+button {
+  all: unset;
+}
+
+button :hover {
+  cursor: pointer;
+}
+
+ul {
+  list-style: none;
+}
+
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.fa {
+  margin-right: 0.15rem;
+  color: grey;
+}
+
+button .fa {
+  color: #fff;
+}
+
+/* goto top button */
+#btn-goto-top {
+  display: none;
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  z-index: 3;
+  opacity: 0.5;
+}
+
+#btn-goto-top:hover {
+  opacity: 0.9;
+}
+
+#btn-goto-top .fa {
+  color: #000;
+}
+
+/* nav */
+#main-nav {
+  position: sticky;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  background: var(--orange-soda);
+  color: white;
+  padding: 0.5rem 0;
+  display: flex;
+  align-items: center;
+}
+
+#main-nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#main-nav a {
+  color: white;
+}
+
+#main-nav li {
+  font-size: 1.2rem;
+  margin-left: 1rem;
+}
+
+#main-nav li:hover {
+  opacity: 0.75;
+}
+
+#main-nav .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* showcase */
+#showcase {
+  background: var(--onyx);
+  color: white;
+}
+
+#showcase .typewriter h2 {
+  border-right: white 0.2rem solid;
+  padding-top: 0.5rem;
+  padding-bottom: 0;
+  padding-right: 0.5rem;
+  text-align: center;
+  margin-left: -1.25rem;
+  animation: blink-cursor 1s step-end infinite;
+}
+
+@keyframes blink-cursor {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: white;
+  }
+}
+
+#showcase h2 {
+  padding: 0 0 0.25rem 0;
+  font-size: 3rem;
+}
+
+#showcase h3 {
+  color: var(--platinum);
+  margin-top: 1rem;
+}
+
+#showcase .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 15rem;
+}
+
+/* about */
+#about {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  gap: 5rem;
+  margin: 2.5rem 0;
+}
+
+#about h3 {
+  color: #666;
+}
+
+#about ul {
+  padding: 0.5rem 0;
+}
+
+#about li {
+  padding: 0.25rem;
+}
+
+#about li :hover {
+  opacity: 0.5;
+}
+
+#about li .fa:hover {
+  opacity: 1;
+}
+
+#about p {
+  margin: 0.5rem 0;
+  text-indent: 2rem;
+  font-size: 1rem;
+}
+
+#about #content h2 {
+  text-align: center;
+  font-size: 2rem;
+  display: inline-block;
+  margin: 1rem 0;
+  padding: 0.5rem 0;
+  border-bottom: 0.2rem var(--sandy-brown) solid;
+}
+
+#about img {
+  width: 100%;
+  margin: 1rem 0;
+}
+
+#about #profile {
+  text-align: center;
+}
+
+#about #content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* skills */
+#skills {
+  background: var(--alabaster);
+  padding: 2rem 0;
+  text-align: center;
+}
+
+#skills h2 {
+  display: inline-block;
+  font-size: 3rem;
+  margin: 2rem 0;
+  border-bottom: 0.2rem var(--sandy-brown) solid;
+}
+
+#skills h3 {
+  font-size: 2rem;
+  margin: 2rem 0;
+  display: flex;
+}
+
+#skills h3::before,
+#skills h3::after {
+  content: '';
+  border-bottom: 0.05rem solid var(--onyx);
+  flex: 1;
+  opacity: 0.5;
+  margin: auto;
+}
+
+#skills h3::before {
+  margin-right: 0.5em;
+}
+
+#skills h3::after {
+  margin-left: 0.5em;
+}
+
+#skills h4 {
+  font-size: 1.5rem;
+  margin: 1rem 0;
+}
+
+#skills img {
+  width: 100%;
+  background: white;
+  border-radius: 20%;
+  padding: 1rem;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+#skills #language,
+#skills #os {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  text-align: center;
+  gap: 1.5rem;
+}
+
+/* projects */
+#projects {
+  text-align: center;
+  padding: 2rem 0;
+}
+
+#projects h2 {
+  display: inline-block;
+  font-size: 3rem;
+  margin: 2rem 0;
+  border-bottom: 0.2rem var(--sandy-brown) solid;
+}
+
+#projects img {
+  width: 100%;
+}
+
+#projects img:hover {
+  cursor: pointer;
+  opacity: 0.7;
+}
+
+#projects .container {
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+#projects .project {
+  background: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding-bottom: 1rem;
+}
+
+#projects .project h3 {
+  margin-top: 1rem;
+}
+
+#projects .description {
+  margin: 0.5rem 0;
+}
+
+#projects .tag {
+  font-weight: bold;
+  color: #144499;
+  margin: 0.5rem 0;
+}
+
+#projects .fa {
+  padding: 0.25rem 0.25rem;
+  color: var(--onyx);
+}
+
+#projects .fa:hover {
+  opacity: 0.5;
+}
+
+/* Footer */
+#footer {
+  padding-top: 0.5rem;
+  background-color: var(--onyx);
+  color: var(--platinum);
+}
+
+#footer a {
+  color: var(--platinum);
+}
+#footer a:hover {
+  opacity: 0.5;
+}
+
+#footer h3 {
+  margin-bottom: 0.5rem;
+}
+
+#footer .fa {
+  margin-right: 0.5rem;
+}
+
+#footer .container {
+  padding: 1rem;
+  text-align: left;
+}
+
+#footer .content {
+  display: grid;
+  grid-template-columns: 2fr 1fr 2fr;
+  gap: 3rem;
+}
+
+#footer .content p {
+  opacity: 0.8;
+}
+
+#footer #footer-bottom {
+  font-size: 0.9rem;
+  color: var(--alabaster);
+  margin-top: 2rem;
+  padding-top: 0.5rem;
+  border-top: var(--platinum) 0.05rem solid;
+}
+
+#footer #footer-bottom .fa {
+  color: inherit;
+  margin-right: 0.25rem;
+}
+
+/* modal */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal img {
+  display: block;
+  width: 100%;
+}
+
+.modal .fa {
+  color: #fff;
+}
+
+.modal .fa:hover {
+  opacity: 0.8;
+}
+
+.modal .circle-indicator {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  margin-left: -20px;
+}
+
+.modal .circle-indicator .fa {
+  padding: 1rem 0;
+}
+
+.modal .circle-indicator :hover {
+  opacity: 1;
+}
+
+.modal .button-close-modal {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+}
+
+.modal .button-previous-page {
+  position: absolute;
+  top: 50%;
+  left: 1rem;
+  margin-top: -24px;
+}
+
+.modal .button-next-page {
+  position: absolute;
+  top: 50%;
+  right: 1rem;
+  margin-top: -24px;
+}
+
+.modal .slideshow-container {
+  position: relative;
+}
+
+.modal #modal-1,
+.modal #modal-2,
+.modal #modal-3 {
+  background: #000;
+  width: 50%;
+  min-width: 20rem;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+}
+
+/* Utility */
+
+.hidden {
+  display: none;
+}
+
+.fade {
+  animation: fade-in;
+  animation-duration: 1s;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0.5;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Themes */
+:root {
+  --orange-soda: #f06543;
+  --sandy-brown: #f09d51;
+  --onyx: #313638;
+  --alabaster: #e0dfd5;
+  --platinum: #e8e9eb;
+}
+
+@media (max-width: 950px) {
+  #skills #language,
+  #skills #os {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  #skills #language :nth-child(5),
+  #skills #os :nth-child(5) {
+    grid-column: 2/3;
+  }
+
+  #skills #language :nth-child(6),
+  #skills #os :nth-child(6) {
+    grid-column: 3/4;
+  }
+}
+
+@media (max-width: 1200px) {
+  #about {
+    grid-template-columns: 1fr 2fr;
+  }
+}
+
+@media (max-width: 800px) {
+  h1 {
+    font-size: 1.2rem;
+  }
+
+  #showcase .typewriter h2 {
+    font-size: 2.4rem;
+  }
+
+  #main-nav li {
+    font-size: 1rem;
+  }
+
+  #about {
+    grid-template-columns: 1fr;
+    gap: 0.5rem;
+  }
+
+  #about #about-me-title {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #about img {
+    width: 40%;
+  }
+
+  #about .container {
+    width: 80%;
+  }
+
+  #skills #language,
+  #skills #os {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  #projects .container {
+    grid-template-columns: 1fr;
+  }
+
+  #footer .content {
+    grid-template-columns: 1fr;
+    gap: 1rem 3rem;
+  }
+}
+
+@media (max-width: 550px) {
+  #skills #language,
+  #skills #os {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.5rem 2rem;
+  }
+
+  #skills #language :nth-child(5),
+  #skills #os :nth-child(5) {
+    grid-column: auto;
+  }
+
+  #skills #language :nth-child(6),
+  #skills #os :nth-child(6) {
+    grid-column: auto;
+  }
+
+  #skills h3::before,
+  #skills h3::after {
+    opacity: 0;
+  }
+}

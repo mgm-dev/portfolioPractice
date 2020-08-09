@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Min's Portfolio</title>
+  </head>
+  <body>
+    <!-- button goto top -->
+    <button id="btn-goto-top">
+      <a href="#showcase">
+        <i class="fa fa-chevron-up fa-2x"></i>
+      </a>
+    </button>
+
+    <!-- nav -->
+    <div id="main-nav">
+      <div class="container">
+        <h1>mgm-dev</h1>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- showcase -->
+    <div id="showcase">
+      <div class="container">
+        <div class="typewriter">
+          <h2>
+            ⠀<span
+              id="typewriter-inner"
+              data-words='["mgm-dev", "Hello, World!", "Front-end"]'
+              data-wait="2000"
+            ></span>
+          </h2>
+        </div>
+        <h3>Don't stop learning</h3>
+      </div>
+    </div>
+    <!-- about -->
+    <div class="container">
+      <div id="about">
+        <div id="profile">
+          <img src="img/circle-cropped.png" alt="profile-pic" />
+          <h2>민경민</h2>
+          <h3>Thomas Min</h3>
+          <ul>
+            <li>
+              <a href="https://github.com/mgm-dev" target="new">
+                <i class="fa fa-github"></i>mgm-dev
+              </a>
+            </li>
+            <li>
+              <a href="mailto:tommin231@gmail.com">
+                <i class="fa fa-envelope"></i>tommin231@gmail.com
+              </a>
+            </li>
+            <li>
+              <a href="https://mgm-dev.tistory.com/" target="new">
+                <i class="fa fa-address-card"></i>mgm-dev.tistory.com
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div id="content">
+          <div id="about-me-title">
+            <h2>저는 이런 사람입니다!</h2>
+          </div>
+          <p>
+            본인은 대학교에서 부동산학을 전공으로 듣던 중, 프롭테크 스타트업에
+            인턴으로 근무하는 경험을 얻었습니다. 그 기회를 통해 개발의 세계에
+            관심을 가지게 되었고, 프론트엔드 개발자가 되겠다 결심하였습니다.
+            적응이 빠르고, 커뮤니케이션이 적극적인 개발자를 목표로 하고
+            있습니다. 현재 가장 많은 시간을 투자하고 있는 분야는 Web Front-end
+            이며, 틈틈히 Android와 Back-end 공부도 진행하고 있습니다.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- skills -->
+    <div id="skills">
+      <div class="container">
+        <div>
+          <h2>Skills</h2>
+        </div>
+        <h3>Language & Framework</h3>
+        <div id="language">
+          <div class="item" data-aos="fade-up">
+            <img src="img/js-logo.png" alt="js-logo" />
+            <h4>Javascript</h4>
+          </div>
+          <div class="item" data-aos="fade-up">
+            <img src="img/java-logo.png" alt="java-logo" />
+            <h4>Java</h4>
+          </div>
+          <div class="item" data-aos="fade-up">
+            <img src="img/python-logo.png" alt="python-logo" />
+            <h4>Python</h4>
+          </div>
+          <div class="item" data-aos="fade-up">
+            <img src="img/php-logo.png" alt="php-logo" />
+            <h4>PHP</h4>
+          </div>
+          <div class="item" data-aos="fade-up">
+            <img src="img/react-logo.png" alt="react-logo" />
+            <h4>React</h4>
+          </div>
+          <div class="item" data-aos="fade-up">
+            <img src="img/django-logo.png" alt="django-logo" />
+            <h4>Django</h4>
+          </div>
+        </div>
+        <h3>OS & Back-end</h3>
+        <div id="os">
+          <div class="item" data-aos="fade-up">
+            <img src="img/windows-logo.png" alt="windows-logo" />
+            <h4>Windows</h4>
+          </div>
+          <div class="item" data-aos="fade-up">
+            <img src="img/android-logo.png" alt="android-logo" />
+            <h4>Android</h4>
+          </div>
+          <div class="item" data-aos="fade-up">
+            <img src="img/linux-logo.png" alt="linux-logo" />
+            <h4>Linux</h4>
+          </div>
+          <div class="item" data-aos="fade-up">
+            <img src="img/mysql-logo.png" alt="mysql-logo" />
+            <h4>MySQL</h4>
+          </div>
+          <div class="item" data-aos="fade-up">
+            <img src="img/apache-logo.png" alt="apache-logo" />
+            <h4>Apache</h4>
+          </div>
+          <div class="item" data-aos="fade-up">
+            <img src="img/aws-logo.png" alt="aws-logo" />
+            <h4>AWS</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Projects -->
+    <div id="projects">
+      <h2>
+        Projects
+      </h2>
+      <div class="container">
+        <div class="project">
+          <img
+            onclick="showModal(1)"
+            id="project-1"
+            src="img/project-1.jpeg"
+            alt="project-1"
+          />
+          <h3>Game Message</h3>
+          <p class="description">게이머를 위한 SNS/채팅 어플</p>
+          <p class="tag">Java, Android, TCP</p>
+          <a href="#"><i class="fa fa-github fa-2x"></i></a>
+          <a href="#"><i class="fa fa-youtube fa-2x"></i></a>
+        </div>
+
+        <div class="project">
+          <img
+            onclick="showModal(2)"
+            id="project-2"
+            src="img/project-2.jpeg"
+            alt="project-2"
+          />
+          <h3>Samdi Samdi</h3>
+          <p class="description">3D 프린터 커뮤니티 웹사이트</p>
+          <p class="tag">Javascript, LAPM, AWS</p>
+          <a href="#"></a>
+          <a href="#"><i class="fa fa-server fa-2x"></i></a>
+          <a href="#"><i class="fa fa-github fa-2x"></i></a>
+          <a href="#"><i class="fa fa-youtube fa-2x"></i></a>
+        </div>
+
+        <div class="project">
+          <img
+            onclick="showModal(3)"
+            id="project-3"
+            src="img/project-3.jpeg"
+            alt="project-3"
+          />
+          <h3>잘 부탁해 미래의 나</h3>
+          <p class="description">3D 프린터 커뮤니티 웹사이트</p>
+          <p class="tag">React, Django, Mysql</p>
+          <a href="#"><i class="fa fa-server fa-2x"></i></a>
+          <a href="#"><i class="fa fa-github fa-2x"></i></a>
+          <a href="#"><i class="fa fa-youtube fa-2x"></i></a>
+        </div>
+      </div>
+    </div>
+    <!-- Footer -->
+    <footer id="footer">
+      <div class="container">
+        <div class="content">
+          <div>
+            <h3>Info</h3>
+            <p>
+              본 사이트는 개인 포트폴리오 정리를 위해 만들어졌습니다. 자유롭게
+              연락해주세요.
+            </p>
+          </div>
+          <div>
+            <h3>Links</h3>
+            <ul>
+              <li><a href="#">- Github</a></li>
+              <li><a href="#">- Youtube</a></li>
+              <li><a href="#">- Blog</a></li>
+            </ul>
+          </div>
+          <div>
+            <h3>contact</h3>
+            <ul>
+              <li><i class="fa fa-phone"></i>+82 10-4003-5298</li>
+              <li><i class="fa fa-envelope"></i>tommin231@gmail.com</li>
+            </ul>
+          </div>
+        </div>
+        <p id="footer-bottom">
+          <i class="fa fa-code"></i>2020, Developed by Thomas Min
+        </p>
+      </div>
+    </footer>
+    <!-- modal -->
+    <div class="modal hidden">
+      <div id="modal-1" class="hidden">
+        <div id="slideshow-1" class="slideshow-container">
+          <div class="slideshow">
+            <div class="slide fade">
+              <img src="img/project-1.jpeg" alt="project-1" />
+            </div>
+            <div class="slide fade hidden">
+              <img src="img/project-2.jpeg" alt="project-2" />
+            </div>
+            <div class="slide fade hidden">
+              <img src="img/project-3.jpeg" alt="project-3" />
+            </div>
+          </div>
+          <i
+            class="button-close-modal fa fa-times fa-2x"
+            onclick="closeModal()"
+          ></i>
+          <i
+            class="button-previous-page fa fa-angle-left fa-4x"
+            onclick="prevSlide(1)"
+          ></i>
+          <i
+            class="button-next-page fa fa-angle-right fa-4x"
+            onclick="nextSlide(1)"
+          ></i>
+          <div class="circle-indicator">
+            <i class="circle fa fa-circle"></i>
+            <i class="circle fa fa-circle-o"></i>
+            <i class="circle fa fa-circle-o"></i>
+          </div>
+        </div>
+      </div>
+      <div id="modal-2" class="hidden">
+        <div id="slideshow-2" class="slideshow-container">
+          <div class="slideshow">
+            <div class="slide fade">
+              <img src="img/project-2.jpeg" alt="project-1" />
+            </div>
+            <div class="slide fade hidden">
+              <img src="img/project-3.jpeg" alt="project-2" />
+            </div>
+            <div class="slide fade hidden">
+              <img src="img/project-1.jpeg" alt="project-3" />
+            </div>
+          </div>
+          <i
+            class="button-close-modal fa fa-times fa-2x"
+            onclick="closeModal()"
+          ></i>
+          <i
+            class="button-previous-page fa fa-angle-left fa-4x"
+            onclick="prevSlide(2)"
+          ></i>
+          <i
+            class="button-next-page fa fa-angle-right fa-4x"
+            onclick="nextSlide(2)"
+          ></i>
+          <div class="circle-indicator">
+            <i class="circle fa fa-circle"></i>
+            <i class="circle fa fa-circle-o"></i>
+            <i class="circle fa fa-circle-o"></i>
+          </div>
+        </div>
+      </div>
+      <div id="modal-3" class="hidden">
+        <div id="slideshow-3" class="slideshow-container">
+          <div class="slideshow">
+            <div class="slide fade">
+              <img src="img/project-3.jpeg" alt="project-1" />
+            </div>
+            <div class="slide fade hidden">
+              <img src="img/project-1.jpeg" alt="project-2" />
+            </div>
+            <div class="slide fade hidden">
+              <img src="img/project-2.jpeg" alt="project-3" />
+            </div>
+          </div>
+          <i
+            class="button-close-modal fa fa-times fa-2x"
+            onclick="closeModal()"
+          ></i>
+          <i
+            class="button-previous-page fa fa-angle-left fa-4x"
+            onclick="prevSlide(3)"
+          ></i>
+          <i
+            class="button-next-page fa fa-angle-right fa-4x"
+            onclick="nextSlide(3)"
+          ></i>
+          <div class="circle-indicator">
+            <i class="circle fa fa-circle"></i>
+            <i class="circle fa fa-circle-o"></i>
+            <i class="circle fa fa-circle-o"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0.0/dist/smooth-scroll.polyfills.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script src="main.js"></script>
+  </body>
+</html>
